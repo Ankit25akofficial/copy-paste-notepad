@@ -17,6 +17,7 @@ const Home = () => {
     const paste = {
       title: title,
       content: value,
+      
       _id:
         pasteId ||
         Date.now().toString(36) + Math.random().toString(36).substring(2),
@@ -33,6 +34,7 @@ const Home = () => {
     setTitle("");
     setValue("");
 
+    
     // Remove the pasteId from the URL after creating/updating a paste
     setSearchParams({});
   };
